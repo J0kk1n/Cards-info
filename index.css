@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background: gray;
+}
+
+
+.container {
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 650px;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: 'Crimson Text', sans-serif;
+    color: rgb(190, 190, 190);
+}
+
+.item {
+    width: 100%;
+}
+
+.item1 {
+    background: url(c88903bcb3\ \(1\).jpg);
+    flex-grow: 4;
+}
+
+.item1 .gradient {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgb(182, 23, 255), rgb(255, 154, 38));
+    opacity: 0.5;
+}
+
+.item2 {
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-grow: 4;
+}
+
+.item2 .img {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    margin-top: -60px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.img::before {
+    content: "";
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: linear-gradient(90deg, #d249ac, rgb(255, 154, 38));
+  border-radius: 50%;
+  z-index: -1;
+}
+
+
+
+.img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.item2 .info {
+    margin: none;
+    position: absolute;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.info .name {
+    font-size: 22px;
+    color: rgb(92, 92, 92);
+    font-weight: bold;
+    margin: 30px 0 0 0;
+}
+
+.info .text {
+    font-size: 20px;
+    margin: 5px 0 0 0 ;
+}
+
+.info .btn {
+    border-radius: 30px;
+    border: 3px solid rgb(28 150 231 / 1);
+    padding: 12px 25px;
+    margin-top: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    background: white;
+    color: rgb(28 150 231 / 1);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: rgb(28 150 231 / 1);
+    color: white;
+    border-color: rgb(28 150 231 / 1);
+}
+
+.btn:hover .card {
+    color: white;
+}
+
+.item3 {
+    display: flex;
+    flex-grow: 0.5;
+}
+
+.item3 .footer {
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-top: 3px solid #e1e5e5;
+    border-right: 3px solid #e1e5e5;
+    background: white;
+}
+
+.footer:last-child {
+    border-right: none;
+}
+
+.item3 p {
+    margin: 0 0 0 0;
+    font-size: 20px;
+}
+
+.item3 .num {
+    color: rgb(92, 92, 92);
+    font-size: 30px;
+    /* margin-top: 20px; */
+    font-weight: bold;
+}
+
